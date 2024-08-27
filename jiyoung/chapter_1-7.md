@@ -243,17 +243,3 @@ type K = keyof (A|B) // K는 never타입
 ❓ [유니온과 인터섹션](https://www.typescriptlang.org/play/?ssl=20&ssc=30&pln=1&pc=1#code/JYOwLgpgTgZghgYwgAgILIN4ChnJHAWwgC5kBnMKUAcwG4sBfLUSWRFAIUx2TmpLwBXAgCNo9JljABPAA4oAwsgC8aZADJkHelgQB7EBWQJSS1dlz4ipAEQALCBBsAaHnwEAmAKyvGOmfLIANIqyADWENJ6MMgAFKgAPhwAlFJyKNTUoYkcWLoGRtTEmaEY7sQAzM5WJADk1LVM+oZgyNQexGaY5VU1xLVQjUA)
 
 - extends 키워드: 집합의 부분집합을 만듦
-
-[아이템8] 타입 공간과 값 공간의 심벌 구분하기
-
-- 타입스크립트의 심벌은 타입, 값 공간 둘 중 한곳에 존재한다.
-- 타입은 컴파일 하는 과정에서 제거된다.
-
-```
-타입
-type, interface
-값
-const, let, var
-둘 다
-class, 생성자함수, enum
-```
